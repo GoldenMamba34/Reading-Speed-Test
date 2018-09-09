@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  background: linear-gradient(to right, #636363, #2c2c2c);
+  height: 75px;
+  line-height: 75px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 37.5px;
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+}
+
+h2 {
+  background: linear-gradient(to right, #636363, #2c2c2c);
+  height: 37.5px;
+  line-height: 18.75px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18.7px;
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+}
+
+header p {
+  font-size: 25px;
+  display: block;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+@-webkit-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@-moz-keyframes GradientAnimation {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 51%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 51%;
+  }
+}
+hr {
+  /* background: linear-gradient(to right, blue,rgb(0, 191, 255),green, #235dff); */
+  height: 10px;
+  margin-top: 30px;
+  background: linear-gradient(272deg, #00ffbd, #0400ff, #641cff, #26ff00, #009cff);
+  background-size: 1000% 1000%;
+  -webkit-animation: GradientAnimation 60s ease infinite;
+  -moz-animation: GradientAnimation 60s ease infinite;
+  -o-animation: GradientAnimation 16s ease infinite;
+  animation: GradientAnimation 60s ease infinite;
+  border: none;
+}
+
+#start {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 75px;
+  margin-top: 40px;
+  background: linear-gradient(272deg, #00ffbd, #0400ff, #641cff, #26ff00, #009cff);
+  background-size: 1000% 1000%;
+  -webkit-animation: GradientAnimation 60s ease infinite;
+  -moz-animation: GradientAnimation 60s ease infinite;
+  -o-animation: GradientAnimation 60s ease infinite;
+  animation: GradientAnimation 60s ease infinite;
+  border-radius: 10px;
+  font-size: 200%;
+  color: white;
+  outline: none;
+  margin-bottom: 40px;
+  border: none;
+  font-size: 42px;
+}
+
+#done {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 75px;
+  margin-top: 40px;
+  background: linear-gradient(272deg, #0400ff, #641cff, #26ff00, #009cff, #00ffbd);
+  background-size: 1000% 1000%;
+  -webkit-animation: GradientAnimation 60s ease infinite;
+  -moz-animation: GradientAnimation 60s ease infinite;
+  -o-animation: GradientAnimation 60s ease infinite;
+  animation: GradientAnimation 60s ease infinite;
+  border-radius: 10px;
+  font-size: 200%;
+  color: white;
+  outline: none;
+  margin-bottom: 40px;
+  border: none;
+  font-size: 42px;
+  opacity: 0.2;
+}
+
+#text {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 40px;
+  font-size: 25px;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  line-height: 40px;
+}
+
+#reset {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 75px;
+  margin-top: 40px;
+  background: linear-gradient(272deg, #ff0062, #d21cff, #54008b, #ff7300, #700000);
+  background-size: 1000% 1000%;
+  -webkit-animation: GradientAnimation 60s ease infinite;
+  -moz-animation: GradientAnimation 60s ease infinite;
+  -o-animation: GradientAnimation 60s ease infinite;
+  animation: GradientAnimation 60s ease infinite;
+  border-radius: 10px;
+  font-size: 200%;
+  color: white;
+  outline: none;
+  margin-bottom: 40px;
+  border: none;
+  font-size: 42px;
+}
+
+#changeText {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  height: 75px;
+  margin-top: 40px;
+  background: linear-gradient(272deg, #0084ff, #00eeff, #641cff, #62ff46, #009cff,rgb(51, 255, 0));
+  background-size: 1000% 1000%;
+  -webkit-animation: GradientAnimation 60s ease infinite;
+  -moz-animation: GradientAnimation 60s ease infinite;
+  -o-animation: GradientAnimation 60s ease infinite;
+  animation: GradientAnimation 60s ease infinite;
+  border-radius: 10px;
+  font-size: 200%;
+  color: white;
+  outline: none;
+  margin-bottom: 40px;
+  border: none;
+  font-size: 42px;
+}
+
+#start:active {
+  border: 6px solid lime;
+}
+#changeText:active {
+  border: 6px solid rgb(0, 255, 0);
+}
+
+#done:active {
+  border: 6px solid blue;
+}
+
+#reset:active {
+  border: 6px solid red;
+}
+#changeTextPopup {
+  position: absolute;
+  top:5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background-color: rgb(0, 60, 150);
+}
+#changeTextPopup textarea {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  resize: none;
+height: 60%;
+padding: 20px;
+font-size: 16px;
+outline:none;
+border-radius: 5px;
+}
+#doneWithChangeText {
+  width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+  height: 50px;
+  margin-top: 25px;
+  background: linear-gradient(272deg, #0084ff, #00eeff, #641cff, #62ff46, #009cff,rgb(51, 255, 0));
+  background-size: 1000% 1000%;
+  -webkit-animation: GradientAnimation 60s ease infinite;
+  -moz-animation: GradientAnimation 60s ease infinite;
+  -o-animation: GradientAnimation 60s ease infinite;
+  animation: GradientAnimation 60s ease infinite;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 30px;
+}
+#overlay {
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  top:0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.884);
+  display: none;
+}
+#changeTextPopup h2 {
+  height: 70px;
+  line-height: 80px;
+  font-size: 30px;
+}
+
+#exitPopup{
+  width: 100px;
+  height: 80px;
+  background: none;
+  outline: none;
+  font-size: 34px;
+  float:right;
+  color:white;
+  border: none;
+}
+#exitPopup:active{
+  border:2px solid rgb(0, 153, 255);
+}
+#doneWithChangeText:active {
+  border:3px solid rgb(0, 134, 223);
+}
+#changeTextPopup p {
+  color:white;
+  text-align: center;
+  display: block;
+  padding-top: 40px;
+  padding-bottom:40px;
+  font-size: 25px;
+}
+/*# sourceMappingURL=ReadingSpeedTest.css.map */
