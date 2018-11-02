@@ -6,7 +6,7 @@ let resetButton = document.getElementById("reset")
 let changeText = document.getElementById("changeText");
 let localStorage = window.localStorage;
 var start = 0;
-var isTesting = false;
+var isTesting = false; 
 
 function WordCount(str) {
     return str.split(' ')
@@ -87,5 +87,5 @@ $("#doneWithChangeText").click(() => {
     $("#overlay").hide(500);
     document.getElementById("text").innerText = $("#changeTextTextArea").val();
     localStorage.setItem('text', text);
-    
+
 })
