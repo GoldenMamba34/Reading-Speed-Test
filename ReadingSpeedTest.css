@@ -131,7 +131,7 @@ hr {
   font-size: 42px;
 }
 
-#start:active {
+/* #start:active {
   border: 6px solid lime;
 }
 #changeText:active {
@@ -144,7 +144,7 @@ hr {
 
 #reset:active {
   border: 6px solid red;
-}
+} */
 #changeTextPopup {
   position: absolute;
   top:5%;
@@ -200,8 +200,24 @@ border: none;
 #exitPopup:hover{
   transform:scale(1.1);
 }
-#doneWithChangeText:active {
+/* #doneWithChangeText:active {
   border:3px solid rgb(0, 134, 223);
+} */
+
+button:enabled{
+  transition-duration: 190ms;
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.16), 0 0 0 2px rgba(0,0,0,0.08);
+}
+
+button:enabled:hover {
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.16), 0 0 0 0px rgba(0,0,0,0.08);
+}
+button:active {
+  transform: scale(1.02);
+}
+
+#exitPopup{
+  box-shadow:none;
 }
 
 #changeTextPopup p {
