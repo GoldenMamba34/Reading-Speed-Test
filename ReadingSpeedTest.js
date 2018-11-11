@@ -6,18 +6,17 @@ let resetButton = document.getElementById("reset")
 let changeText = document.getElementById("changeText");
 let localStorage = window.localStorage;
 var start = 0;
-var isTesting = false; 
+var isTesting = false;
 
-function WordCount(str) {
-    return str.split(' ')
-    .filter(function(n) { return n != '' })
-    .length
+function CountWords(str) {
+return str.trim().split(/\s+/).length;
 }
 
 
 document.addEventListener("DOMContentLoaded", () => {
     if (  localStorage.getItem('text')) {
         document.getElementById("text").innerText = localStorage.getItem('text');
+        $("#wordCount").text(`${CountWords(localStorage.getItem('text'))} Words`)
     }
 })
 startButton.addEventListener("click", function(){
@@ -34,7 +33,7 @@ startButton.addEventListener("click", function(){
 
 doneButton.addEventListener("click", function(){
     if (isTesting) {
-    var textLength = WordCount(text);
+    var textLength = CountWords(text);
     var milliseconds = Date.now() - start;
     var seconds = milliseconds / 1000;
     var minutes = seconds / 60;
@@ -87,5 +86,5 @@ $("#doneWithChangeText").click(() => {
     $("#overlay").hide(500);
     document.getElementById("text").innerText = $("#changeTextTextArea").val();
     localStorage.setItem('text', text);
-
+    $("#wordCount").text(`${CountWords(localStorage.getItem('text'))} Words`)
 })

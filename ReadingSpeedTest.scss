@@ -24,7 +24,7 @@ h2 {
   text-align: center;
   color: white;
   padding-bottom: 10px;
-  padding-left:5%;
+  padding-left: 5%;
 }
 
 header p {
@@ -35,10 +35,9 @@ header p {
   font-weight: 500;
   margin-top: 25px;
 }
-
 @-webkit-keyframes GradientAnimation {
   0% {
-    background-position: 0% 51%;
+    background-position: 0 51%;
   }
 
   50% {
@@ -46,7 +45,7 @@ header p {
   }
 
   100% {
-    background-position: 0% 51%;
+    background-position: 0 51%;
   }
 }
 
@@ -101,6 +100,25 @@ hr {
   line-height: 40px;
 }
 
+#wordCount, #estimator {
+  padding: 20px;
+  font-size: 25px;
+  margin-left: 50px;
+  width: 15%;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  display:inline-block;
+}
+ #estimator {
+   width:65%;
+ }
+ #infoOnText {
+   max-height:20%;
+ }
+ #estimator input {
+   
+ }
 #reset {
   width: 50%;
   margin-left: 25%;
@@ -200,7 +218,7 @@ button:enabled {
 }
 
 button:enabled:hover {
-  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0 0 0px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.08);
 }
 
 button:active {
@@ -219,5 +237,4 @@ button:active {
   padding-bottom: 40px;
   font-size: 25px;
 }
-
 /*# sourceMappingURL=ReadingSpeedTest.css.map */

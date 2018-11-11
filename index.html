@@ -1,59 +1,67 @@
 <html>
 
 <head>
-    <title>Speed Reading Test</title>
-    <link rel="stylesheet" href="ReadingSpeedTest.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="shortcut icon" type="image/png" href="reading.jpg"/>
+  <title>Speed Reading Test</title>
+  <link rel="stylesheet" href="ReadingSpeedTest.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="reading.jpg" />
 </head>
 
 <body>
 
-    <header>
+  <header>
 
-        <h1>Speed Reading Test</h1>
+    <h1>Speed Reading Test</h1>
 
-    </header>
+  </header>
 
-    <button id="start">Start</button>
-    <button id="changeText">Change Text</button>
-    <div id="overlay">
-        <div id="changeTextPopup">
-            <button id="exitPopup">X</button>
-            <h2>Change Text</h2>
-            <textarea id="changeTextTextArea" name="" id="" cols="60" rows="30"></textarea>
-<button id="doneWithChangeText">Done</button>
-        </div>
-
+  <button id="start">Start</button>
+  <button id="changeText">Change Text</button>
+  <div id="overlay">
+    <div id="changeTextPopup">
+      <button id="exitPopup">X</button>
+      <h2>Change Text</h2>
+      <textarea id="changeTextTextArea" name="" id="" cols="60" rows="30"></textarea>
+      <button id="doneWithChangeText">Done</button>
     </div>
+  </div>
 
-    <p id="text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
-    </p>
-    <button id="done" disabled>Done</button>
+  <div id="infoOnText">
+  <p id="wordCount">_ Words</p>
 
-    <button id="reset">Test Again</button>
-    <script src="ReadingSpeedTest.js"></script>
+  <div id="estimator">
+<p>It will take _ if you read at <input type="text"> words per minute</p>
+  </div>
+
+  </div>
+
+  <p id="text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in veritatis quaerat, voluptatum voluptatem aliquid, optio adipisci dignissimos architecto suscipit eveniet laborum odio cumque corrupti ab voluptatibus? Ab, consequuntur vero.
+  </p>
+  <button id="done" disabled>Done</button>
+
+  <button id="reset">Test Again</button>
+  <script src="ReadingSpeedTest.js"></script>
 
 </body>
 
